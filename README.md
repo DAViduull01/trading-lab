@@ -7,6 +7,7 @@ A structured set of mini-projects to build intuition for:
 
 ## Projects
 1. Monte Carlo Expected Value Simulator
+    - Demonstrates how positive-EV strategies can appear unprofitable over short horizons due to variance.
 2. Gambler’s Ruin Simulation
 3. Kelly Criterion & Risk Sizing
 4. Market Maker v0 (Fixed Spread)
