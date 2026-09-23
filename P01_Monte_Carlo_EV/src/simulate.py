@@ -1,7 +1,11 @@
 import random
+from pathlib import Path
 import matplotlib.pyplot as plt
 
 random.seed(42)
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+OUTPUT_DIR = BASE_DIR / "output"
 
 NUM_SIMULATIONS = 1000
 PATH_LENGTH = 1000
@@ -84,7 +88,7 @@ plt.title("Positive EV Can Look Unprofitable")
 plt.legend()
 plt.grid()
 
-plt.savefig("../output/losing_probability.png")
+plt.savefig(OUTPUT_DIR / "losing_probability.png")
 plt.close()
 
 ###########     PROFIT AND LOSS PLOT     ###########
@@ -104,5 +108,5 @@ plt.title("Sample P&L Paths")
 plt.legend()
 plt.grid()
 
-plt.savefig("../output/sample_pnl_paths.png")
+plt.savefig(OUTPUT_DIR / "sample_pnl_paths.png")
 plt.close()
