@@ -68,7 +68,7 @@ Run the simulation:
 
 python3 src/simulate.py
 
-## 2.Gambler’s Ruin  
+## 2. Gambler’s Ruin  
    Studies the probability of bankruptcy versus growth under finite bankroll constraints,
    even when the expected value is positive.
 
